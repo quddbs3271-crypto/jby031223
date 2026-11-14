@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="교통혼잡을 고려한 경기북부 중증응급질환별 대체의료기관 접근성 및 종합 의료취약지역 도출을 위한 GIS2 연구 프로젝트 소개">
+  <title>경기북부 응급의료 접근성 GIS 연구</title>
+  <style>
+    :root{--ink:#132236;--muted:#526377;--bg:#f7f9fc;--line:#dce3eb;--blue:#255e98;--soft:#ecf3f9}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.7}
+    header{background:#173651;color:white;padding:62px 24px 54px}header .wrap{max-width:940px;margin:auto}header p{color:#c9d8e5;margin:0 0 12px;font-weight:600;letter-spacing:.06em;font-size:13px}h1{font-size:clamp(26px,4vw,40px);line-height:1.37;margin:0 0 16px;letter-spacing:-.04em}header .sub{color:#e2eaf0;max-width:720px;font-size:16px}
+    main{max-width:940px;margin:35px auto 80px;padding:0 20px}section{background:white;border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-bottom:18px}h2{font-size:22px;letter-spacing:-.03em;margin:0 0 16px}p{margin:8px 0 12px;color:#27384b}ul{padding-left:20px;margin:10px 0}li{margin:7px 0}.lead{font-size:17px;color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.box{border:1px solid var(--line);background:#fafcfe;border-radius:9px;padding:16px}.box strong{display:block;color:var(--blue);margin-bottom:4px}.flow{display:grid;gap:8px}.step{background:var(--soft);border-left:4px solid #3e74a7;padding:12px 18px;border-radius:3px;font-weight:500}.arrow{text-align:center;color:#517499;font-size:18px;line-height:1}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:11px 13px;text-align:left;border:1px solid var(--line);vertical-align:top}th{background:#f1f5f9}a{color:#235f99;overflow-wrap:anywhere}.note{background:#f8fafc;border-left:3px solid #71869d;padding:13px 16px;font-size:14px}footer{text-align:center;color:#6b7889;font-size:13px;padding:20px}
+    @media(max-width:650px){header{padding:42px 18px}section{padding:23px 18px}.grid{grid-template-columns:1fr}main{padding:0 12px}table{font-size:12px}th,td{padding:8px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap">
+  <p>GIS2 · UNIVERSITY RESEARCH PROJECT</p>
+  <h1>교통혼잡을 고려한 경기북부<br>중증응급질환별 대체의료기관 접근성 분석을 통한<br>종합 의료취약지역 도출</h1>
+  <div class="sub">경기북부의 중증응급의료 접근성이 교통상황에 따라 어떻게 달라지는지 살펴보는 GIS 기반 연구계획입니다.</div>
+</div></header>
+<main>
+<section><h2>연구 목적</h2>
+  <p class="lead">가장 가까운 병원까지의 거리만으로는 응급의료 접근성을 충분히 설명하기 어렵습니다.</p>
+  <p>본 연구는 경기북부에서 중증응급질환별 치료가 가능한 의료기관을 구분하고, 비혼잡 및 혼잡 시간대에 정해진 분석용 이송시간 안에 접근할 수 있는 <strong>모든 대체 의료기관의 수와 분포</strong>를 비교합니다. 이를 통해 교통혼잡으로 접근성이 악화되는 지역을 파악하고자 합니다.</p>
+  <p class="note">본 페이지는 연구계획 소개입니다. 실제 구급차 이송시간, 의료기관의 실시간 수용 거절 여부 또는 임상적 골든타임 충족을 입증한 결과가 아닙니다.</p>
+</section>
+<section><h2>분석 범위</h2><div class="grid">
+  <div class="box"><strong>연구 지역</strong>고양·파주·의정부·양주·동두천·포천·연천·구리·남양주·가평의 10개 시·군</div>
+  <div class="box"><strong>분석 단위</strong>100m × 100m 인구격자(자료 품질 및 계산 가능성 검증 후 적용)</div>
+  <div class="box"><strong>분석 대상</strong>질환별 치료 가능성이 검증된 중증응급의료기관. 필요 시 서울·인천·경기남부·강원 인접 지역 포함</div>
+  <div class="box"><strong>비교 조건</strong>비혼잡 / 출근 혼잡 / 퇴근 혼잡 등 시간대별 도로 이동시간</div>
+</div></section>
+<section><h2>예정 분석 절차</h2><div class="flow">
+  <div class="step">01. 행정구역·100m 인구격자·도로망·교통속도·의료기관 자료 수집</div><div class="arrow">↓</div>
+  <div class="step">02. 좌표계 정리 및 도로 링크와 교통속도 연결 가능성 검증</div><div class="arrow">↓</div>
+  <div class="step">03. 분석 가능한 중증응급질환과 치료 가능 의료기관 분류</div><div class="arrow">↓</div>
+  <div class="step">04. 교통상황별 도로 통행시간 및 네트워크 구축</div><div class="arrow">↓</div>
+  <div class="step">05. 질환·격자별 분석용 시간 안에 접근 가능한 의료기관 수 계산</div><div class="arrow">↓</div>
+  <div class="step">06. 시간대별 접근성 악화 및 대체 의료기관 부족지역 비교</div><div class="arrow">↓</div>
+  <div class="step">07. 질환별 취약성 평가와 종합 의료취약지역 도출</div>
+</div></section>
+<section><h2>현재 자료 확인 현황</h2>
+<table><thead><tr><th>자료</th><th>상태</th><th>비고</th></tr></thead><tbody>
+<tr><td>KTDB 수도권 도로 네트워크(2024–2035)</td><td>파일 보유·구조 확인</td><td>2024·2030·2035년 네트워크 폴더의 링크/노드 텍스트, 배포용 엑셀, 회전 패널티 자료가 포함됨. ArcMap용 완성 Network Dataset은 아님.</td></tr>
+<tr><td>경기도 교통정보센터 통행속도 API</td><td>발급 및 수집 예정</td><td>도로 링크 식별 체계가 KTDB 네트워크와 호환되는지 검증 필요</td></tr>
+<tr><td>SGIS 100m 인구격자</td><td>확보 예정</td><td>비공개·비밀보호 처리된 통계값 주의</td></tr>
+<tr><td>국립중앙의료원 응급의료기관 정보</td><td>확보 예정</td><td>실시간 수용가능정보와 상시 치료역량을 구분할 필요 있음</td></tr>
+</tbody></table>
+</section>
+<section><h2>공식 데이터 제공처</h2>
+<ul>
+<li><a href="https://www.ktdb.go.kr/" target="_blank" rel="noopener">국가교통DB(KTDB)</a> — 도로 네트워크</li>
+<li><a href="https://openapigits.gg.go.kr/api/jsp/manual_getRoadTrafficInfoList.jsp" target="_blank" rel="noopener">경기도 교통정보센터 Open API</a> — 도로 구간별 교통속도</li>
+<li><a href="https://sgis.mods.go.kr/" target="_blank" rel="noopener">SGIS 통계지리정보서비스</a> — 100m 인구격자 및 행정경계</li>
+<li><a href="https://www.data.go.kr/data/15000563/openapi.do" target="_blank" rel="noopener">공공데이터포털: 응급의료기관 정보 조회</a> — 병원 기본정보 및 중증질환 수용가능정보</li>
+</ul></section>
+</main><footer>GIS2 연구계획 공개 소개 페이지 · 연구 수행 중 · 데이터 출처는 각 제공기관에 있음</footer>
+</body></html>
